@@ -1,0 +1,241 @@
+/*Змінні*/
+:root {
+  --primary-white-color: #f5f5f5;
+  --secondary-white-color: #ffffff;
+  --accent-color: #2196f3;
+  --second-section-bgc: #f5f4fa;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+}
+
+body {
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+/*Основна сторінка*/
+
+/*Хедер*/
+
+.header {
+  background-color: var(--secondary-white-color);
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  color: var(--accent-color);
+}
+.logo-header {
+  color: #000000;
+}
+
+.list {
+  list-style: none;
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+
+.contact-header {
+  font-weight: 50;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+.contact-header:hover,
+.contact-header:focus {
+  color: var(--accent-color);
+}
+
+/*Герой*/
+
+.hero {
+  background-color: #2f303a;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--secondary-white-color);
+}
+
+.hero-button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: var(--secondary-white-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+
+/*Переваги*/
+
+.benefits {
+  background-color: var(--primary-white-color);
+}
+
+.benefits-title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.benefit-title {
+  font-size: 14px;
+  line-height: 1.17;
+}
+
+.benefits-text {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--secondary-text-color);
+}
+
+/*Види діяльності*/
+
+.activity {
+  background-color: var(--primary-white-color);
+}
+
+.activity-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+/*Команда*/
+
+.team {
+  background-color: var(--second-section-bgc);
+}
+
+.team-title {
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.team-item {
+  background-color: var(--secondary-white-color);
+}
+
+.name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team-text {
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.19;
+  color: var(--secondary-text-color);
+}
+
+/*Футер*/
+
+.footer {
+  background-color: #2f303a;
+}
+
+.logo-footer {
+  color: var(--secondary-white-color);
+}
+
+.address {
+  font-style: normal;
+}
+
+.address-link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-white-color);
+  text-decoration: none;
+}
+
+.contact-footer {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: var(--accent-color);
+}
+
+.contact-footer:hover,
+.contact-footer:focus {
+  color: var(--accent-color);
+}
+/*Сторінка портфоліо*/
+.filter-button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #212121;
+  background-color: var(--second-section-bgc);
+  cursor: pointer;
+}
+
+.filter-button:hover,
+.filter-button:focus,
+.filter-button:active {
+  color: var(--secondary-white-color);
+  background-color: var(--accent-color);
+}
+
+.project-card {
+  background-color: var(--secondary-white-color);
+}
+
+.project-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project-type {
+  font-size: 16px;
+  line-height: 1.88;
+  color: #757575;
+}
+
+.list-item:nth-child {
+  color: #2196f3;
+}
