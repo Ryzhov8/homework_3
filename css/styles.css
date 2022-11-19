@@ -171,6 +171,12 @@ p {
   cursor: pointer;
 }
 
+.hero-button:hover,
+.hero-button:focus,
+.hero-button:active {
+  background-color: #188ce8;
+}
+
 /*Переваги*/
 
 .benefits {
