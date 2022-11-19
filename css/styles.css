@@ -1,11 +1,20 @@
 /*Змінні*/
 :root {
-  --primary-white-color: #f5f5f5;
-  --secondary-white-color: #ffffff;
+  --primary-white-color: #ffffff;
   --accent-color: #2196f3;
   --second-section-bgc: #f5f4fa;
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {
@@ -15,12 +24,44 @@ body {
   letter-spacing: 0.03em;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.list {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  list-style: none;
+  padding: 0px;
+}
+
 /*Основна сторінка*/
 
 /*Хедер*/
 
 .header {
-  background-color: var(--secondary-white-color);
+  background-color: var(--primary-white-color);
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding: 94px 15px;
+}
+
+.header > .container {
+  display: flex;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .logo {
@@ -31,12 +72,21 @@ body {
   text-decoration: none;
   color: var(--accent-color);
 }
+
+.header .logo {
+  margin-right: 93px;
+}
+
 .logo-header {
   color: #000000;
 }
-
-.list {
-  list-style: none;
+.nav {
+  display: flex;
+  align-items: center;
+}
+.site-nav {
+  display: flex;
+  margin-right: 344px;
 }
 
 .nav-link {
@@ -48,9 +98,21 @@ body {
   color: var(--primary-text-color);
 }
 
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .nav-link:hover,
 .nav-link:focus {
   color: var(--accent-color);
+}
+
+.contacts-list {
+  display: flex;
+}
+
+.contacts-header-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .contact-header {
@@ -73,24 +135,38 @@ body {
   background-color: #2f303a;
 }
 
+.hero > .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .hero-title {
+  width: 696px;
+  margin: 0px auto 30px auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
-  color: var(--secondary-white-color);
+  color: var(--primary-white-color);
 }
 
 .hero-button {
+  width: 224px;
+  padding: 10px 32px;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   text-align: center;
-  color: var(--secondary-white-color);
+  border: none;
+  border-radius: 4px;
+  color: var(--primary-white-color);
   background-color: var(--accent-color);
   cursor: pointer;
 }
@@ -101,13 +177,24 @@ body {
   background-color: var(--primary-white-color);
 }
 
+.benefits > .container {
+  padding-bottom: 0px;
+}
+
 .benefits-title {
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.benefits-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .benefit-title {
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.17;
 }
@@ -115,7 +202,7 @@ body {
 .benefits-text {
   font-size: 14px;
   line-height: 1.71;
-  color: var(--secondary-text-color);
+  color: var(--primary-white-color);
 }
 
 /*Види діяльності*/
@@ -124,7 +211,13 @@ body {
   background-color: var(--primary-white-color);
 }
 
+.activity-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .activity-title {
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -136,7 +229,13 @@ body {
   background-color: var(--second-section-bgc);
 }
 
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .team-title {
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -144,10 +243,20 @@ body {
 }
 
 .team-item {
-  background-color: var(--secondary-white-color);
+  padding-bottom: 30px;
+  width: 270px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: var(--primary-white-color);
+}
+
+.team-photo {
+  margin-bottom: 30px;
 }
 
 .name {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -166,20 +275,30 @@ body {
 .footer {
   background-color: #2f303a;
 }
+.footer > .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 .logo-footer {
-  color: var(--secondary-white-color);
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--primary-white-color);
 }
 
 .address {
   font-style: normal;
 }
 
+.address-item:not(:last-child) {
+  margin-bottom: 6px;
+}
+
 .address-link {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--secondary-white-color);
+  color: var(--primary-white-color);
   text-decoration: none;
 }
 
@@ -201,30 +320,65 @@ body {
   color: var(--accent-color);
 }
 /*Сторінка портфоліо*/
+
+.filter {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 575px;
+}
+
 .filter-button {
+  padding: 6px 22px;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
   text-align: center;
+  border: 0px;
+  border-radius: 4px;
   color: #212121;
   background-color: var(--second-section-bgc);
   cursor: pointer;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.filter-item:last-child {
+  margin-bottom: 50px;
 }
 
 .filter-button:hover,
 .filter-button:focus,
 .filter-button:active {
-  color: var(--secondary-white-color);
+  color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
 
-.project-card {
-  background-color: var(--secondary-white-color);
+.project-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-.project-title {
+.project-label {
+  padding: 20px 24px;
+  border-top: none;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.project-card {
+  width: 370px;
+  background-color: var(--primary-white-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.project-name {
+  margin-bottom: 4px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -234,8 +388,4 @@ body {
   font-size: 16px;
   line-height: 1.88;
   color: #757575;
-}
-
-.list-item:nth-child {
-  color: #2196f3;
 }
