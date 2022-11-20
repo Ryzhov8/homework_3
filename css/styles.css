@@ -46,20 +46,22 @@ img {
   display: block;
 }
 
-/*Основна сторінка*/
-
-/*Хедер*/
-
-.header {
-  background-color: var(--primary-white-color);
-}
-
 .container {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
   padding: 94px 15px;
 }
+
+/*Основна сторінка*/
+
+/*Хедер*/
+
+.header {
+  background-color: var(--primary-white-color);
+  border-bottom: 1px solid #ECECEC;
+}
+
 
 .header > .container {
   display: flex;
@@ -90,7 +92,6 @@ img {
 }
 .site-nav {
   display: flex;
-  margin-right: 344px;
 }
 
 .nav-link {
@@ -113,6 +114,7 @@ img {
 
 .contacts-list {
   display: flex;
+  margin-left: auto;
 }
 
 .contacts-header-item:not(:last-child) {
@@ -140,11 +142,9 @@ img {
 }
 
 .hero > .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  text-align: center;
 }
 
 .hero-title {
@@ -160,6 +160,7 @@ img {
 }
 
 .hero-button {
+  display: inline-block;
   width: 224px;
   padding: 10px 32px;
   font-family: 'Roboto', sans-serif;
@@ -253,7 +254,6 @@ img {
 }
 
 .team-item {
-  padding-bottom: 30px;
   width: 270px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -261,9 +261,11 @@ img {
   background-color: var(--primary-white-color);
 }
 
-.team-photo {
-  margin-bottom: 30px;
+.team-label {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
+
 
 .name {
   margin-bottom: 10px;
@@ -290,9 +292,13 @@ img {
   padding-bottom: 60px;
 }
 
-.logo-footer {
+.footer .logo{
   display: inline-block;
   margin-bottom: 20px;
+}
+
+.logo-footer {
+  display: inline-block;
   color: var(--primary-white-color);
 }
 
@@ -355,7 +361,7 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.filter-item:last-child {
+.filter {
   margin-bottom: 50px;
 }
 
@@ -368,7 +374,6 @@ img {
 
 .project-list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
 }
@@ -382,7 +387,7 @@ img {
 }
 
 .project-card {
-  width: 370px;
+width: 370px;
   background-color: var(--primary-white-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
