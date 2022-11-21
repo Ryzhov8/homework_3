@@ -53,6 +53,9 @@ img {
   padding: 94px 15px;
 }
 
+
+
+
 /*Основна сторінка*/
 
 /*Хедер*/
@@ -86,21 +89,29 @@ img {
 .logo-header {
   color: #000000;
 }
+
 .nav {
   display: flex;
   align-items: center;
 }
+
 .site-nav {
   display: flex;
 }
 
 .nav-link {
+  padding-top: 25px;
+  padding-bottom: 25px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--primary-text-color);
+}
+
+.nav-link.current {
+  color: var(--accent-color);
 }
 
 .nav-item:not(:last-child) {
@@ -117,17 +128,21 @@ img {
   margin-left: auto;
 }
 
-.contacts-header-item:not(:last-child) {
+.header .contacts-item {
+  color:#757575;
+}
+
+.header .contacts-item:not(:last-child) {
   margin-right: 50px;
 }
 
 .contact-header {
+  color: #757575;
   font-weight: 50;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: var(--primary-text-color);
 }
 
 .contact-header:hover,
@@ -203,17 +218,19 @@ img {
   display: flex;
   justify-content: space-between;
 }
-
+.benefits-item:not(:last-child){
+  margin-right: 30px;
+}
 .benefit-title {
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.17;
 }
 
-.benefits-text {
+.benefit-text {
   font-size: 14px;
   line-height: 1.71;
-  color: var(--primary-white-color);
+  color: #757575;
 }
 
 /*Види діяльності*/
