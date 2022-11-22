@@ -51,6 +51,7 @@ img {
   margin-right: auto;
   width: 1200px;
   padding: 94px 15px;
+  
 }
 
 
@@ -389,6 +390,7 @@ img {
   background-color: var(--accent-color);
 }
 
+
 .project-list {
   display: flex;
   flex-wrap: wrap;
@@ -406,7 +408,6 @@ img {
 .project-card {
 width: 370px;
   background-color: var(--primary-white-color);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .project-name {
@@ -421,3 +422,4 @@ width: 370px;
   line-height: 1.88;
   color: #757575;
 }
+
